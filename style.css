@@ -1,3 +1,13 @@
-header{
+/* ---------> body */
+body {
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 13px;
+}
+/* <--------- body */
+
+/* ---------> header */
+header {
   background: #000000;
 }
+/* <--------- header */
