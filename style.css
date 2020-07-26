@@ -42,13 +42,22 @@ button:focus {
 button:not(:disabled) {
   cursor: auto;
 }
-/* <--------- Bootstrap overwrite common */
+
+.dropdown-menu {
+  border: none;
+}
+/* <--------- common overwrite Bootstrap */
+
+/* ---------> html */
+html {
+  font-size: 14px;
+}
+/* <--------- html */
 
 /* ---------> body */
 body {
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  font-size: 14px;
 }
 /* <--------- body */
 
@@ -68,13 +77,17 @@ header button.navbar-toggler {
   line-height: 60px;
 }
 
-header a {
-  font-size: 13px;
-}
-
 header .navbar-toggler {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+header .navbar-nav .nav-link,
+header .navbar-nav .dropdown-item {
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px;
 }
 /* <--------- header */
