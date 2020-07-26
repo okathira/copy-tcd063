@@ -2,6 +2,10 @@
 .logo img {
   width: 110px;
 }
+
+.inner {
+  padding: 0 20px;
+}
 /* <--------- common */
 
 /* ---------> common overwrite Bootstrap*/
@@ -53,6 +57,10 @@ header {
   background: #000000;
 }
 
+header .logo {
+  height: 60px;
+}
+
 header button.navbar-toggler {
   padding: 1px 6px;
   width: 60px;
@@ -62,5 +70,11 @@ header button.navbar-toggler {
 
 header a {
   font-size: 13px;
+}
+
+header .navbar-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /* <--------- header */
