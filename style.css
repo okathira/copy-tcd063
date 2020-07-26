@@ -4,7 +4,7 @@
 }
 /* <--------- common */
 
-/* ---------> Bootstrap common */
+/* ---------> common overwrite Bootstrap*/
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link {
@@ -18,7 +18,27 @@
   color: #ffffff;
   background-color: #000000;
 }
-/* <--------- Bootstrap common */
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20width%3D%2216%22%20height%3D%2216%22%3E%20%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FFF%22%20d%3D%22M1%202.75A.75.75%200%20011.75%202h12.5a.75.75%200%20110%201.5H1.75A.75.75%200%20011%202.75zm0%205A.75.75%200%20011.75%207h12.5a.75.75%200%20110%201.5H1.75A.75.75%200%20011%207.75zM1.75%2012a.75.75%200%20100%201.5h12.5a.75.75%200%20100-1.5H1.75z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"); /* https://primer.style/octicons/three-bars-16 */
+  height: 18px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: auto;
+}
+/* <--------- Bootstrap overwrite common */
 
 /* ---------> body */
 body {
@@ -31,6 +51,13 @@ body {
 /* ---------> header */
 header {
   background: #000000;
+}
+
+header button.navbar-toggler {
+  padding: 1px 6px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
 }
 
 header a {
