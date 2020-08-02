@@ -97,3 +97,22 @@ header .dropdown-item:hover {
   background-color: #000000;
 }
 /* <--------- header */
+
+@media (min-width: 768px) {
+  /* ---------> common */
+  .logo img {
+    width: 50%;
+  }
+  /* <--------- common */
+
+  /* ---------> header */
+  header .logo {
+    padding: 0 0 0 5.55556%;
+  }
+
+  header ul.navbar-nav li.nav-item a,
+  header ul.navbar-nav ul.dropdown-menu li a {
+    padding: 0 5.55556%;
+  }
+  /* <--------- header */
+}
