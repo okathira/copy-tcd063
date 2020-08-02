@@ -64,21 +64,21 @@ header .navbar-dark .navbar-toggler-icon {
   height: 18px;
 }
 
-header .navbar-nav li a {
+header ul.navbar-nav li a {
   height: 50px;
   line-height: 50px;
   font-size: 13px;
 }
 
-header .navbar-nav li.nav-item a {
+header ul.navbar-nav li.nav-item a {
   padding: 0 20px;
 }
 
-header .navbar-nav li.dropdown-item {
+header ul.navbar-nav ul.dropdown-menu li {
   padding: 0 0 0 1rem;
 }
 
-header .navbar-nav li.dropdown-item a {
+header ul.navbar-nav ul.dropdown-menu li a {
   padding: 0 20px;
   display: flex;
 }
