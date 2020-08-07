@@ -136,9 +136,14 @@ header .dropdown-item:hover {
   }
 
   header ul.navbar-nav li.nav-item a.nav-link {
+    transition-duration: 0.2s;
     height: 90px;
     line-height: 90px;
     padding: 0 21px;
+  }
+
+  header ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: #999999;
   }
 
   header ul.navbar-nav ul.dropdown-menu li {
@@ -146,8 +151,13 @@ header .dropdown-item:hover {
   }
 
   header ul.navbar-nav ul.dropdown-menu li a {
+    transition-duration: 0.2s;
     padding: 17px 18px;
     line-height: normal;
+  }
+
+  header ul.navbar-nav ul.dropdown-menu li a:hover {
+    background: #442606;
   }
   /* <--------- header */
 }
