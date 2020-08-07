@@ -53,6 +53,7 @@ header .navbar-toggler {
   position: absolute;
   top: 0;
   right: 0;
+  line-height: 1;
 }
 
 header .navbar-dark .navbar-toggler-icon {
@@ -154,6 +155,7 @@ header .dropdown-item:hover {
     transition-duration: 0.2s;
     padding: 17px 18px;
     line-height: normal;
+    line-height: 1.2;
   }
 
   header ul.navbar-nav ul.dropdown-menu li a:hover {
