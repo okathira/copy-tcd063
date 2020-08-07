@@ -116,3 +116,42 @@ header .dropdown-item:hover {
   }
   /* <--------- header */
 }
+
+@media (min-width: 1200px) {
+  /* ---------> header */
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header nav.navbar {
+    height: 90px;
+    max-width: 1180px;
+    margin: auto;
+    width: 92.1875%;
+  }
+
+  header nav.navbar .logo {
+    padding: 0;
+    height: auto;
+  }
+
+  header ul.navbar-nav li a {
+    font-size: 14px;
+  }
+
+  header ul.navbar-nav li.nav-item a.nav-link {
+    height: 90px;
+    line-height: 90px;
+    padding: 0 21px;
+  }
+
+  header ul.navbar-nav ul.dropdown-menu li {
+    padding: 0;
+  }
+
+  header ul.navbar-nav ul.dropdown-menu li a {
+    padding: 17px 18px;
+    line-height: normal;
+  }
+  /* <--------- header */
+}
