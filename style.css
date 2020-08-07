@@ -1,4 +1,13 @@
 /* ---------> common */
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
 .logo img {
   width: 110px;
 }
@@ -26,19 +35,6 @@ button:not(:disabled) {
   border: none;
 }
 /* <--------- common */
-
-/* ---------> html */
-html {
-  font-size: 14px;
-}
-/* <--------- html */
-
-/* ---------> body */
-body {
-  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
-    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-}
-/* <--------- body */
 
 /* ---------> header */
 header {
