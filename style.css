@@ -38,7 +38,7 @@ button:not(:disabled) {
 
 /* ---------> header */
 header {
-  background: #000000;
+  background: #000;
 }
 
 header .logo {
@@ -49,14 +49,13 @@ header .navbar-toggler {
   padding: 1px 6px;
   width: 60px;
   height: 60px;
-  line-height: 60px;
   position: absolute;
   top: 0;
   right: 0;
   line-height: 1;
 }
 
-header .navbar-dark .navbar-toggler-icon {
+header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20width%3D%2216%22%20height%3D%2216%22%3E%20%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FFF%22%20d%3D%22M1%202.75A.75.75%200%20011.75%202h12.5a.75.75%200%20110%201.5H1.75A.75.75%200%20011%202.75zm0%205A.75.75%200%20011.75%207h12.5a.75.75%200%20110%201.5H1.75A.75.75%200%20011%207.75zM1.75%2012a.75.75%200%20100%201.5h12.5a.75.75%200%20100-1.5H1.75z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
   height: 18px;
 }
@@ -68,30 +67,30 @@ header ul.navbar-nav li a {
 }
 
 header ul.navbar-nav li.nav-item a {
+  transition: 0.2s;
   padding: 0 20px;
 }
 
 header ul.navbar-nav ul.dropdown-menu li {
-  padding: 0 0 0 1rem;
+  padding-left: 1rem;
 }
 
 header ul.navbar-nav ul.dropdown-menu li a {
   padding: 0 20px;
-  display: flex;
 }
 
-header .navbar-dark .navbar-nav .nav-link:focus,
-header .navbar-dark .navbar-nav .nav-link:hover,
-header .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
+header .navbar-nav .nav-link:focus,
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link {
+  color: #fff;
 }
 
 header .dropdown-menu,
 header .dropdown-item,
 header .dropdown-item:focus,
 header .dropdown-item:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
 }
 /* <--------- header */
 
@@ -103,13 +102,10 @@ header .dropdown-item:hover {
   /* <--------- common */
 
   /* ---------> header */
-  header .logo {
-    padding: 0 0 0 5.55556%;
-  }
-
+  header .logo,
   header ul.navbar-nav li.nav-item a,
   header ul.navbar-nav ul.dropdown-menu li a {
-    padding: 0 5.55556%;
+    padding: 0 6%;
   }
   /* <--------- header */
 }
@@ -124,7 +120,7 @@ header .dropdown-item:hover {
     height: 90px;
     max-width: 1180px;
     margin: auto;
-    width: 92.1875%;
+    width: 92%;
   }
 
   header nav.navbar .logo {
@@ -137,14 +133,13 @@ header .dropdown-item:hover {
   }
 
   header ul.navbar-nav li.nav-item a.nav-link {
-    transition-duration: 0.2s;
     height: 90px;
     line-height: 90px;
     padding: 0 21px;
   }
 
   header ul.navbar-nav li.nav-item a.nav-link:hover {
-    color: #999999;
+    color: #999;
   }
 
   header ul.navbar-nav ul.dropdown-menu li {
@@ -152,9 +147,7 @@ header .dropdown-item:hover {
   }
 
   header ul.navbar-nav ul.dropdown-menu li a {
-    transition-duration: 0.2s;
     padding: 17px 18px;
-    line-height: normal;
     line-height: 1.2;
   }
 
