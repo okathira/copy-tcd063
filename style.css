@@ -8,12 +8,8 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.logo img {
+img.logo {
   width: 110px;
-}
-
-.inner {
-  padding: 0 20px;
 }
 
 .navbar-toggler {
@@ -41,8 +37,9 @@ header {
   background: #000;
 }
 
-header .logo {
+header nav.navbar h1 {
   height: 60px;
+  padding: 0 20px;
 }
 
 header .navbar-toggler {
@@ -96,13 +93,13 @@ header .dropdown-item:hover {
 
 @media (min-width: 768px) {
   /* ---------> common */
-  .logo img {
+  img.logo {
     width: 50%;
   }
   /* <--------- common */
 
   /* ---------> header */
-  header .logo,
+  header nav.navbar h1,
   header ul.navbar-nav li.nav-item a,
   header ul.navbar-nav ul.dropdown-menu li a {
     padding: 0 6%;
@@ -123,7 +120,7 @@ header .dropdown-item:hover {
     width: 92%;
   }
 
-  header nav.navbar .logo {
+  header nav.navbar h1 {
     padding: 0;
     height: auto;
   }
