@@ -12,7 +12,7 @@ img.logo {
   width: 110px;
 }
 
-.navbar-toggler {
+button.navbar-toggler {
   border: none;
 }
 
@@ -42,7 +42,7 @@ header nav.navbar h1 {
   padding: 0 20px;
 }
 
-header .navbar-toggler {
+header button.navbar-toggler {
   padding: 1px 6px;
   width: 60px;
   height: 60px;
@@ -51,12 +51,12 @@ header .navbar-toggler {
   right: 0;
 }
 
-header .navbar-toggler-icon {
+header span.navbar-toggler-icon {
   height: 18px;
   width: 16px;
 }
 
-header .navbar-toggler-icon span::after {
+header span.navbar-toggler-icon span::after {
   content: "";
   display: block;
   width: 100%;
@@ -66,23 +66,16 @@ header .navbar-toggler-icon span::after {
   border-radius: 2px;
 }
 
-header ul.navbar-nav li a {
+header ul.navbar-nav li.nav-item a {
   height: 50px;
   line-height: 50px;
   font-size: 13px;
-}
-
-header ul.navbar-nav li.nav-item a {
   transition: 0.2s;
   padding: 0 20px;
 }
 
-header ul.navbar-nav ul.dropdown-menu li {
+header ul.navbar-nav li.nav-item ul.dropdown-menu li {
   padding-left: 1rem;
-}
-
-header ul.navbar-nav ul.dropdown-menu li a {
-  padding: 0 20px;
 }
 
 header .navbar-nav .nav-link:focus,
@@ -109,8 +102,7 @@ header .dropdown-item:hover {
 
   /* ---------> header */
   header nav.navbar h1,
-  header ul.navbar-nav li.nav-item a,
-  header ul.navbar-nav ul.dropdown-menu li a {
+  header ul.navbar-nav li.nav-item a {
     padding: 0 6%;
   }
   /* <--------- header */
@@ -131,10 +123,9 @@ header .dropdown-item:hover {
 
   header nav.navbar h1 {
     padding: 0;
-    height: auto;
   }
 
-  header ul.navbar-nav li a {
+  header ul.navbar-nav li.nav-item a {
     font-size: 14px;
   }
 
@@ -148,16 +139,16 @@ header .dropdown-item:hover {
     color: #999;
   }
 
-  header ul.navbar-nav ul.dropdown-menu li {
+  header ul.navbar-nav li.nav-item ul.dropdown-menu li {
     padding: 0;
   }
 
-  header ul.navbar-nav ul.dropdown-menu li a {
+  header ul.navbar-nav li.nav-item ul.dropdown-menu li a {
     padding: 17px 18px;
     line-height: 1.2;
   }
 
-  header ul.navbar-nav ul.dropdown-menu li a:hover {
+  header ul.navbar-nav li.nav-item ul.dropdown-menu li a:hover {
     background: #442606;
   }
   /* <--------- header */
