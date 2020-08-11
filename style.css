@@ -66,6 +66,10 @@ header span.navbar-toggler-icon span::after {
   border-radius: 2px;
 }
 
+header .collapsing {
+  transition: 0.2s;
+}
+
 header ul.navbar-nav li.nav-item a {
   height: 50px;
   line-height: 50px;
