@@ -8,11 +8,11 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-img.logo {
+.logo {
   width: 110px;
 }
 
-button.navbar-toggler {
+.navbar-toggler {
   border: none;
 }
 
@@ -37,12 +37,12 @@ header {
   background: #000;
 }
 
-header nav.navbar h1 {
+header .navbar h1 {
   height: 60px;
   padding: 0 20px;
 }
 
-header button.navbar-toggler {
+header .navbar-toggler {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -50,12 +50,12 @@ header button.navbar-toggler {
   right: 0;
 }
 
-header span.navbar-toggler-icon {
+header .navbar-toggler-icon {
   height: 18px;
   width: 16px;
 }
 
-header span.navbar-toggler-icon span::after {
+header .navbar-toggler-icon span::after {
   content: "";
   display: block;
   height: 2px;
@@ -68,7 +68,7 @@ header .collapsing {
   transition: height 0.5s;
 }
 
-header ul.navbar-nav li.nav-item a {
+header .navbar-nav .nav-item a {
   height: 50px;
   line-height: 50px;
   font-size: 13px;
@@ -77,12 +77,10 @@ header ul.navbar-nav li.nav-item a {
   padding: 0 20px;
 }
 
-header ul.navbar-nav li.nav-item ul.dropdown-menu li {
+header .navbar-nav .dropdown-menu li {
   padding-left: 1rem;
 }
 
-header .navbar-nav .nav-link:focus,
-header .navbar-nav .nav-link:hover,
 header .navbar-nav .nav-link {
   color: #fff;
 }
@@ -98,14 +96,14 @@ header .dropdown-item:hover {
 
 @media (min-width: 768px) {
   /* ---------> common */
-  img.logo {
+  .logo {
     width: 50%;
   }
   /* <--------- common */
 
   /* ---------> header */
-  header nav.navbar h1,
-  header ul.navbar-nav li.nav-item a {
+  header .navbar h1,
+  header .navbar-nav .nav-item a {
     padding: 0 48px;
   }
   /* <--------- header */
@@ -117,41 +115,41 @@ header .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  header nav.navbar {
+  header .navbar {
     height: 90px;
     max-width: 1180px;
     margin: auto;
     width: 92%;
   }
 
-  header nav.navbar h1 {
+  header .navbar h1 {
     padding: 0;
   }
 
-  header ul.navbar-nav li.nav-item a {
+  header .navbar-nav .nav-item a {
     font-size: 14px;
   }
 
-  header ul.navbar-nav li.nav-item a.nav-link {
+  header .navbar-nav .nav-item .nav-link {
     height: 90px;
     line-height: 90px;
     padding: 0 21px;
   }
 
-  header ul.navbar-nav li.nav-item a.nav-link:hover {
+  header .navbar-nav .nav-item .nav-link:hover {
     color: #999;
   }
 
-  header ul.navbar-nav li.nav-item ul.dropdown-menu li {
+  header .navbar-nav .dropdown-menu li {
     padding: 0;
   }
 
-  header ul.navbar-nav li.nav-item ul.dropdown-menu li a {
+  header .navbar-nav .dropdown-menu a {
     padding: 18px 18px;
     line-height: 1.2;
   }
 
-  header ul.navbar-nav li.nav-item ul.dropdown-menu li a:hover {
+  header .navbar-nav .dropdown-menu a:hover {
     background: #442606;
   }
   /* <--------- header */
