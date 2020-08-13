@@ -43,7 +43,6 @@ header nav.navbar h1 {
 }
 
 header button.navbar-toggler {
-  padding: 1px 6px;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -66,14 +65,15 @@ header span.navbar-toggler-icon span::after {
 }
 
 header .collapsing {
-  transition: 0.2s;
+  transition: height 0.5s;
 }
 
 header ul.navbar-nav li.nav-item a {
   height: 50px;
   line-height: 50px;
   font-size: 13px;
-  transition: 0.2s;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
   padding: 0 20px;
 }
 
@@ -106,7 +106,7 @@ header .dropdown-item:hover {
   /* ---------> header */
   header nav.navbar h1,
   header ul.navbar-nav li.nav-item a {
-    padding: 0 6%;
+    padding: 0 48px;
   }
   /* <--------- header */
 }
@@ -147,7 +147,7 @@ header .dropdown-item:hover {
   }
 
   header ul.navbar-nav li.nav-item ul.dropdown-menu li a {
-    padding: 17px 18px;
+    padding: 18px 18px;
     line-height: 1.2;
   }
 
