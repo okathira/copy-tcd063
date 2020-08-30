@@ -8,6 +8,21 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+.mincho {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+h2,
+.copy {
+  font-size: 20px;
+}
+
 .logo {
   width: 110px;
 }
@@ -33,10 +48,6 @@ button:not(:disabled) {
 /* <--------- common */
 
 /* ---------> header */
-header {
-  background: #000;
-}
-
 header .navbar h1 {
   height: 60px;
   padding: 0 20px;
@@ -68,6 +79,10 @@ header .collapsing {
   transition: height 0.5s;
 }
 
+header .navbar-nav .nav-item {
+  z-index: 1;
+}
+
 header .navbar-nav .nav-item a {
   height: 50px;
   line-height: 50px;
@@ -93,6 +108,44 @@ header .dropdown-item:hover {
   background-color: #000;
 }
 /* <--------- header */
+
+/* ---------> main */
+main {
+  position: absolute;
+  top: 60px;
+}
+
+main #top-image {
+  height: 360px;
+}
+
+main .copy {
+  writing-mode: vertical-rl;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+main #top-content {
+  padding: 32px 0;
+  margin-bottom: 40px;
+}
+
+main #top-content .inner {
+  padding: 0 20px;
+}
+
+main #top-content h2 {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+main #top-content span {
+  line-height: 2;
+}
+/* <--------- main */
 
 @media (min-width: 768px) {
   /* ---------> common */
