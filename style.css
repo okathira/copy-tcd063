@@ -116,6 +116,7 @@ main {
 }
 
 main #top-image {
+  overflow: hidden;
   height: 360px;
 }
 
