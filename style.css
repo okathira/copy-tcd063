@@ -15,7 +15,7 @@ body {
 }
 
 .bg-black {
-  background-color: #000 !important;
+  background-color: #000;
 }
 
 h2,
@@ -113,11 +113,21 @@ header .dropdown-item:hover {
 main {
   position: absolute;
   top: 60px;
+  width: 100%;
 }
 
 main #top-image {
-  overflow: hidden;
+  overflow-x: hidden;
   height: 360px;
+}
+
+main .image {
+  height: 100%;
+  width: 100%;
+}
+
+main .image img {
+  height: 100%;
 }
 
 main .copy {
@@ -127,6 +137,7 @@ main .copy {
   transform: translate(-50%, -50%);
   font-weight: 500;
   line-height: 1.3;
+  white-space: nowrap;
 }
 
 main #top-content {
@@ -153,6 +164,11 @@ main #top-content span {
   .logo {
     width: 50%;
   }
+
+  h2,
+  .copy {
+    font-size: 36px;
+  }
   /* <--------- common */
 
   /* ---------> header */
@@ -161,12 +177,33 @@ main #top-content span {
     padding: 0 48px;
   }
   /* <--------- header */
+
+  /* ---------> main */
+  main #top-image {
+    height: calc(100vw * 3 / 4.5);
+    width: 100%;
+  }
+
+  main .image img {
+    height: auto;
+    width: 100%;
+  }
+
+  main .image img {
+    height: auto;
+    width: 100%;
+  }
+  /* <--------- main */
 }
 
 @media (min-width: 1200px) {
   /* ---------> header */
-  header {
+  header.bg-black{
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header .bg-black{
+    background-color: rgba(0, 0, 0, 0);
   }
 
   header .navbar {
@@ -207,4 +244,12 @@ main #top-content span {
     background: #442606;
   }
   /* <--------- header */
+
+  /* ---------> main */
+  main {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+  /* <--------- main */
 }
