@@ -192,11 +192,11 @@ main #top-content span {
 
 @media (min-width: 1200px) {
   /* ---------> header */
-  header.bg-black{
+  header.bg-black {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  header .bg-black{
+  header .bg-black {
     background-color: rgba(0, 0, 0, 0);
   }
 
