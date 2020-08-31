@@ -181,12 +181,6 @@ main #top-content span {
   /* ---------> main */
   main #top-image {
     height: calc(100vw * 3 / 4.5);
-    width: 100%;
-  }
-
-  main .image img {
-    height: auto;
-    width: 100%;
   }
 
   main .image img {
