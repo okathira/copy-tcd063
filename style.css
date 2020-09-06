@@ -79,6 +79,7 @@ header .collapsing {
   transition: height 0.5s;
 }
 
+header,
 header .navbar-nav .nav-item {
   z-index: 1;
 }
@@ -113,21 +114,13 @@ header .dropdown-item:hover {
 main {
   position: absolute;
   top: 60px;
-  width: 100%;
 }
 
-main #top-image {
+main #top-copy {
+  background-image: url("./images/top-background.jpg");
+  background-size: cover;
   overflow-x: hidden;
   height: 360px;
-}
-
-main .image {
-  height: 100%;
-  width: 100%;
-}
-
-main .image img {
-  height: 100%;
 }
 
 main .copy {
@@ -154,7 +147,7 @@ main #top-content h2 {
   line-height: 1.5;
 }
 
-main #top-content span {
+main #top-content p {
   line-height: 2;
 }
 /* <--------- main */
@@ -179,19 +172,27 @@ main #top-content span {
   /* <--------- header */
 
   /* ---------> main */
-  main #top-image {
-    height: calc(100vw * 3 / 4.5);
+  main #top-copy {
+    height: calc(100vw * 9 / 16);
   }
 
-  main .image img {
-    height: auto;
-    width: 100%;
+  main #top-content .inner {
+    padding: 0;
+    margin: 0 48px;
+  }
+
+  main #top-content p {
+    line-height: 2.6;
   }
   /* <--------- main */
 }
 
 @media (min-width: 1200px) {
   /* ---------> header */
+  header {
+    position: absolute;
+  }
+
   header.bg-black {
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -241,9 +242,7 @@ main #top-content span {
 
   /* ---------> main */
   main {
-    position: absolute;
-    top: 0px;
-    z-index: -1;
+    position: static;
   }
   /* <--------- main */
 }
