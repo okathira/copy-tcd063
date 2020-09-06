@@ -48,6 +48,11 @@ button:not(:disabled) {
 /* <--------- common */
 
 /* ---------> header */
+header {
+  position: relative;
+  z-index: 10;
+}
+
 header .navbar h1 {
   height: 60px;
   padding: 0 20px;
@@ -75,13 +80,13 @@ header .navbar-toggler-icon span::after {
   border-radius: 2px;
 }
 
-header .collapsing {
-  transition: height 0.5s;
+header #navbarNav {
+  position: absolute;
+  top: 60px;
 }
 
-header,
-header .navbar-nav .nav-item {
-  z-index: 1;
+header #navbarNav.collapsing {
+  transition: height 0.5s;
 }
 
 header .navbar-nav .nav-item a {
@@ -111,11 +116,6 @@ header .dropdown-item:hover {
 /* <--------- header */
 
 /* ---------> main */
-main {
-  position: absolute;
-  top: 60px;
-}
-
 main #top-copy {
   background-image: url("./images/top-background.jpg");
   background-size: cover;
@@ -212,6 +212,10 @@ main #top-content p {
     padding: 0;
   }
 
+  header #navbarNav {
+    position: static;
+  }
+
   header .navbar-nav .nav-item a {
     font-size: 14px;
   }
@@ -239,10 +243,4 @@ main #top-content p {
     background: #442606;
   }
   /* <--------- header */
-
-  /* ---------> main */
-  main {
-    position: static;
-  }
-  /* <--------- main */
 }
