@@ -167,27 +167,30 @@ main #description .inner {
   .copy {
     font-size: 36px;
   }
-  /* <--------- common */
 
-  /* ---------> header */
+  .inner p {
+    line-height: 2.6;
+  }
+
   header .navbar h1,
-  header .navbar-nav .nav-item a {
+  header .navbar-nav .nav-item a,
+  main #top-content .inner,
+  main #description {
     padding: 0 48px;
   }
-  /* <--------- header */
+  /* <--------- common */
 
   /* ---------> main */
   main #top-copy {
     height: calc(100vw * 9 / 16);
   }
 
-  main #top-content .inner {
-    padding: 0;
-    margin: 0 48px;
+  main #description {
+    margin: 96px 0;
   }
 
-  main #top-content p {
-    line-height: 2.6;
+  main #description .inner {
+    padding: 48px 24px;
   }
   /* <--------- main */
 }
