@@ -27,6 +27,22 @@ h2,
   width: 110px;
 }
 
+.inner h2 {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.inner p {
+  line-height: 2;
+}
+
+main #top-content .inner,
+main #description,
+header .navbar h1,
+header .navbar-nav .nav-item a {
+  padding: 0 20px;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -55,7 +71,6 @@ header {
 
 header .navbar h1 {
   height: 60px;
-  padding: 0 20px;
 }
 
 header .navbar-toggler {
@@ -95,7 +110,6 @@ header .navbar-nav .nav-item a {
   font-size: 13px;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  padding: 0 20px;
 }
 
 header .navbar-nav .dropdown-menu li {
@@ -138,17 +152,8 @@ main #top-content {
   margin-bottom: 40px;
 }
 
-main #top-content .inner {
-  padding: 0 20px;
-}
-
-main #top-content h2 {
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-main #top-content p {
-  line-height: 2;
+main #description .inner {
+  padding: 32px 24px;
 }
 /* <--------- main */
 
