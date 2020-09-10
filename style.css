@@ -198,7 +198,7 @@ main #top-content p {
   }
 
   header .bg-black {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 
   header .navbar {
