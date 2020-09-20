@@ -242,5 +242,9 @@ main #top-content p {
   header .navbar-nav .dropdown-menu a:hover {
     background: #442606;
   }
+
+  main #top-content {
+    padding: 48px 0;
+  }
   /* <--------- header */
 }
