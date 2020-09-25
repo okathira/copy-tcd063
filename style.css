@@ -127,7 +127,6 @@ header .navbar-nav .dropdown-menu li {
 main #top-copy {
   background-image: url("./images/top-background.jpg");
   background-size: cover;
-  overflow-x: hidden;
   height: 360px;
 }
 
