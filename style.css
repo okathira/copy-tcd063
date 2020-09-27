@@ -8,19 +8,38 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.mincho {
+main #top-content h2,
+main #top-copy .copy {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.bg-black {
+header,
+header #navbarNav,
+header .dropdown-menu,
+header .dropdown-item,
+header .dropdown-item:focus,
+header .dropdown-item:hover,
+main #top-content,
+main #top-copy {
   background-color: #000;
+}
+
+header .navbar-nav .nav-link,
+header .dropdown-menu,
+header .dropdown-item,
+header .dropdown-item:focus,
+header .dropdown-item:hover,
+main #top-content,
+main #top-copy {
+  color: #fff;
 }
 
 h2,
 .copy {
   font-size: 20px;
+  line-height: 30px;
 }
 
 .logo {
@@ -115,41 +134,37 @@ header .navbar-nav .nav-item a {
 header .navbar-nav .dropdown-menu li {
   padding-left: 1rem;
 }
-
-header .navbar-nav .nav-link {
-  color: #fff;
-}
-
-header .dropdown-menu,
-header .dropdown-item,
-header .dropdown-item:focus,
-header .dropdown-item:hover {
-  color: #fff;
-  background-color: #000;
-}
 /* <--------- header */
 
 /* ---------> main */
 main #top-copy {
   background-image: url("./images/top-background.jpg");
   background-size: cover;
-  overflow-x: hidden;
   height: 360px;
 }
 
-main .copy {
+main #top-copy .copy {
   writing-mode: vertical-rl;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 26px;
   white-space: nowrap;
 }
 
 main #top-content {
   padding: 32px 0;
   margin-bottom: 40px;
+}
+
+main #top-content .inner {
+  padding: 0 20px;
+}
+
+main #top-content h2 {
+  margin-bottom: 8px;
+}
+
+main #top-content p {
+  line-height: 28px;
 }
 
 main #description .inner {
@@ -160,12 +175,13 @@ main #description .inner {
 @media (min-width: 768px) {
   /* ---------> common */
   .logo {
-    width: 50%;
+    width: 143px;
   }
 
   h2,
   .copy {
     font-size: 36px;
+    line-height: 54px;
   }
 
   .inner p {
@@ -185,6 +201,19 @@ main #description .inner {
     height: calc(100vw * 9 / 16);
   }
 
+  main #top-copy .copy {
+    line-height: 46px;
+  }
+
+  main #top-content .inner {
+    padding: 0;
+    margin: 0 48px;
+  }
+
+  main #top-content p {
+    line-height: 36px;
+  }
+
   main #description {
     margin: 96px 0;
   }
@@ -199,14 +228,7 @@ main #description .inner {
   /* ---------> header */
   header {
     position: absolute;
-  }
-
-  header.bg-black {
     background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  header .bg-black {
-    background-color: rgba(0, 0, 0, 0);
   }
 
   header .navbar {
@@ -222,6 +244,7 @@ main #description .inner {
 
   header #navbarNav {
     position: static;
+    background-color: transparent;
   }
 
   header .navbar-nav .nav-item a {
@@ -244,11 +267,15 @@ main #description .inner {
 
   header .navbar-nav .dropdown-menu a {
     padding: 18px 18px;
-    line-height: 1.2;
+    line-height: 16px;
   }
 
   header .navbar-nav .dropdown-menu a:hover {
     background: #442606;
+  }
+
+  main #top-content {
+    padding: 48px 0;
   }
   /* <--------- header */
 }
