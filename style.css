@@ -55,15 +55,6 @@ h2,
   width: 110px;
 }
 
-.inner h2 {
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.inner p {
-  line-height: 2;
-}
-
 main #top-content .inner,
 main #description,
 header .navbar h1,
@@ -168,11 +159,13 @@ main #top-content .inner {
   padding: 0 20px;
 }
 
-main #top-content h2 {
+main #top-content h2,
+main #description h2 {
   margin-bottom: 8px;
 }
 
-main #top-content p {
+main #top-content p,
+main #description p {
   line-height: 28px;
 }
 
@@ -191,10 +184,6 @@ main #description .inner {
   .copy {
     font-size: 36px;
     line-height: 54px;
-  }
-
-  .inner p {
-    line-height: 2.6;
   }
 
   header .navbar h1,
@@ -219,7 +208,8 @@ main #description .inner {
     margin: 0 48px;
   }
 
-  main #top-content p {
+  main #top-content p,
+  main #description p {
     line-height: 36px;
   }
 
