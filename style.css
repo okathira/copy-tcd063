@@ -206,6 +206,7 @@ main #cards .card-header {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  background-color: transparent;
 }
 
 main #cards .card-header::before {
