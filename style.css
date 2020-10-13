@@ -93,8 +93,17 @@ button:not(:disabled) {
   border: none;
 }
 
-.card-columns {
-  column-count: 1;
+@media (max-width: 767.98px) {
+  .card-deck {
+    display: initial;
+    flex-flow: initial;
+    margin: 0;
+  }
+
+  .card-deck .card {
+    flex: initial;
+    margin: 0;
+  }
 }
 /* <--------- common */
 
@@ -256,10 +265,6 @@ main #cards .card-link {
   main #cards {
     padding: 0 48px;
   }
-
-  .card-columns {
-    column-count: 3;
-  }
   /* <--------- common */
 
   /* ---------> main */
@@ -293,6 +298,42 @@ main #cards .card-link {
 
   main #description .inner {
     padding: 48px 24px;
+  }
+
+  main #cards .card-body {
+    padding: 30px 30px 40px;
+  }
+
+  main #cards .card-text {
+    margin-bottom: 30px;
+    line-height: 34px;
+  }
+
+  main #cards .card-link {
+    font-size: 14px;
+    width: 150px;
+    line-height: 56px;
+  }
+
+  main #cards .card-header {
+    width: 160px;
+    height: 160px;
+    font-size: 20px;
+  }
+
+  main #cards .card-header::before {
+    width: 150px;
+    height: 150px;
+    border-width: 75px;
+  }
+
+  main #cards .card {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  main #cards .card:last-of-type {
+    margin-right: 0;
   }
   /* <--------- main */
 }
@@ -349,6 +390,14 @@ main #cards .card-link {
 
   main #top-content {
     padding: 48px 0;
+  }
+
+  main #cards .card {
+    margin-right: 30px;
+  }
+
+  main #cards .card-link {
+    width: 200px;
   }
   /* <--------- header */
 }
