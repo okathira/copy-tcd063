@@ -97,12 +97,12 @@ button:not(:disabled) {
   .card-deck {
     display: initial;
     flex-flow: initial;
-    margin: 0;
+    margin: initial;
   }
 
   .card-deck .card {
     flex: initial;
-    margin: 0;
+    margin: initial;
   }
 }
 /* <--------- common */
