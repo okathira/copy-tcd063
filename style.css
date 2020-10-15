@@ -57,6 +57,12 @@ button:not(:disabled) {
   border: none;
 }
 
+.btn.focus,
+.btn:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+  box-shadow: none;
+}
+
 @media (max-width: 767.98px) {
   .card-deck {
     display: initial;
@@ -239,7 +245,7 @@ main #cards .card-link {
   width: 180px;
   font-size: 12px;
   line-height: 46px;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, outline 0.2s;
 }
 /* <--------- main */
 
