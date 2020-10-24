@@ -241,10 +241,6 @@ main #cards .card-text {
   line-height: 28px;
 }
 
-main #cards .link {
-  text-align: center;
-}
-
 main #cards .card-link {
   width: 180px;
   padding: 0;
