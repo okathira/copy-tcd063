@@ -298,11 +298,22 @@ main #news-event .news-item {
   background-color: var(--color-white);
   border: 1px solid var(--color-gray);
   margin-top: -1px;
-  padding: 14px 20px;
 }
 
 main #news-event .item-link {
   text-decoration: none;
+}
+
+main #news-event .item-link-image {
+  display: none;
+}
+
+main #news-event .item-link-content {
+  padding: 14px 20px;
+}
+
+main #news-event .item-link-content > :first-child {
+  margin-bottom: 6px;
 }
 
 main #news-event .date {
@@ -310,7 +321,6 @@ main #news-event .date {
   font-size: 12px;
   line-height: 1;
   color: var(--color-darkgray);
-  margin-bottom: 6px;
 }
 
 main #news-event .text {
@@ -437,11 +447,15 @@ main #news-event .list-link::after {
     margin-bottom: 36px;
   }
 
-  main #news-event .news-item {
+  main #news-event .item-link-image {
+    display: block;
+  }
+
+  main #news-event .item-link-content {
     padding: 20px;
   }
 
-  main #news-event .date {
+  main #news-event .item-link-content > :first-child {
     margin-bottom: 10px;
   }
 
