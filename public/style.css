@@ -13,6 +13,7 @@
   --font-family-gothic: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --inner-side-spacing: 0 20px;
+  --inner-max-width: 1180px;
 }
 
 html {
@@ -264,7 +265,7 @@ main #cards .card-link:hover {
 
 main #news-event {
   background-color: var(--color-whitesmoke);
-  padding-top: 38px;
+  padding: 38px 0 4px;
 }
 
 main #news-event .block {
@@ -286,6 +287,7 @@ main #news-event .section-title .subtitle {
   font-family: var(--font-family-gothic);
   font-size: 14px;
   margin-left: 12px;
+  vertical-align: middle;
 }
 
 main #news-event .list {
@@ -375,7 +377,7 @@ main #news-event .list-link::after {
 
   main #description .block,
   main #cards .block {
-    max-width: 1180px;
+    max-width: var(--inner-max-width);
   }
 
   main #description .inner {
@@ -417,6 +419,64 @@ main #news-event .list-link::after {
     width: 150px;
     line-height: 56px;
   }
+
+  main #news-event {
+    padding: 56px 0 60px;
+  }
+
+  main #news-event .section-title {
+    font-size: 45px;
+    margin-bottom: 36px;
+  }
+
+  main #news-event .section-title .subtitle {
+    font-size: 16px;
+  }
+
+  main #news-event .list {
+    margin-bottom: 36px;
+  }
+
+  main #news-event .news-item {
+    padding: 20px;
+  }
+
+  main #news-event .date {
+    margin-bottom: 10px;
+  }
+
+  main #news-event .text {
+    font-size: 16px;
+    line-height: 1;
+  }
+  /* <--------- main */
+}
+
+@media (min-width: 992px) {
+  /* ---------> main */
+  main #news-event .inner {
+    max-width: var(--inner-max-width);
+    margin: auto;
+  }
+
+  main #news-event .content {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  main #news-event .content:first-of-type {
+    padding-left: 0;
+  }
+
+  main #news-event .content:last-of-type {
+    padding-right: 0;
+  }
+
+  main #news-event .text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   /* <--------- main */
 }
 
@@ -429,7 +489,7 @@ main #news-event .list-link::after {
 
   header .navbar {
     height: 90px;
-    max-width: 1180px;
+    max-width: var(--inner-max-width);
     margin: auto;
     width: 92%;
   }
@@ -480,6 +540,11 @@ main #news-event .list-link::after {
 
   main #cards .card-link {
     width: 200px;
+  }
+
+  main #news-event .content {
+    padding-right: 16px;
+    padding-left: 16px;
   }
   /* <--------- header */
 }
