@@ -447,21 +447,41 @@ main #news-event .list-link::after {
     margin-bottom: 36px;
   }
 
+  main #news-event .item-link {
+    display: flex;
+  }
+
   main #news-event .item-link-image {
     display: block;
+    margin: -1px;
+    height: 132px;
+  }
+
+  main #news-event .item-link-image .image {
+    height: 100%;
   }
 
   main #news-event .item-link-content {
     padding: 20px;
+    min-width: 0;
   }
 
-  main #news-event .item-link-content > :first-child {
+  main #news-event #event .item-link-content {
+    margin: auto 0;
+    padding: 0 44px;
+  }
+
+  main #news-event #news .item-link-content > :first-child {
     margin-bottom: 10px;
   }
 
   main #news-event .text {
     font-size: 16px;
     line-height: 1;
+  }
+
+  main #news-event #event .text {
+    line-height: 25px;
   }
   /* <--------- main */
 }
@@ -486,10 +506,18 @@ main #news-event .list-link::after {
     padding-right: 0;
   }
 
+  main #news-event #event .item-link-content {
+    padding: 0 32px;
+  }
+
   main #news-event .text {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+
+  main #news-event #event .text {
+    white-space: normal;
   }
   /* <--------- main */
 }
