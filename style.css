@@ -4,11 +4,16 @@
   --color-darkorange-lighter: #442606;
   --color-white: #fff;
   --color-whitesmoke: #f5f5f5;
+  --color-gray: #ddd;
+  --color-darkgray: #999;
   --color-black: #000;
   --font-family-mincho: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体",
     "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
     "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  --font-family-gothic: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --inner-side-spacing: 0 20px;
+  --inner-max-width: 1180px;
 }
 
 html {
@@ -16,8 +21,7 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
-    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: var(--font-family-gothic);
 }
 
 h2,
@@ -202,6 +206,10 @@ main #description h2 {
   color: var(--color-darkorange-lighter);
 }
 
+main #cards {
+  margin-bottom: 40px;
+}
+
 main #cards .card {
   margin-bottom: 24px;
 }
@@ -254,6 +262,91 @@ main #cards .card-link {
 main #cards .card-link:hover {
   background-color: var(--color-darkorange);
 }
+
+main #news-event {
+  background-color: var(--color-whitesmoke);
+  padding: 38px 0 4px;
+}
+
+main #news-event .block {
+  padding: var(--inner-side-spacing);
+}
+
+main #news-event .content {
+  margin-bottom: 36px;
+}
+
+main #news-event .section-title {
+  font-family: var(--font-family-mincho);
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+main #news-event .section-title .subtitle {
+  font-family: var(--font-family-gothic);
+  font-size: 14px;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+main #news-event .list {
+  margin-bottom: 14px;
+}
+
+main #news-event .news-item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  margin-top: -1px;
+}
+
+main #news-event .item-link {
+  text-decoration: none;
+}
+
+main #news-event .item-link-image {
+  display: none;
+}
+
+main #news-event .item-link-content {
+  padding: 14px 20px;
+}
+
+main #news-event .item-link-content > :first-child {
+  margin-bottom: 6px;
+}
+
+main #news-event .date {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--color-darkgray);
+}
+
+main #news-event .text {
+  font-size: 14px;
+  color: var(--color-black);
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+}
+
+main #news-event .list-link {
+  color: var(--color-black);
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+main #news-event .list-link:hover {
+  color: var(--color-darkgray);
+}
+
+main #news-event .list-link::after {
+  content: "＞";
+  margin-left: 12px;
+}
+
 /* <--------- main */
 
 @media (min-width: 768px) {
@@ -294,7 +387,7 @@ main #cards .card-link:hover {
 
   main #description .block,
   main #cards .block {
-    max-width: 1180px;
+    max-width: var(--inner-max-width);
   }
 
   main #description .inner {
@@ -336,6 +429,96 @@ main #cards .card-link:hover {
     width: 150px;
     line-height: 56px;
   }
+
+  main #news-event {
+    padding: 56px 0 60px;
+  }
+
+  main #news-event .section-title {
+    font-size: 45px;
+    margin-bottom: 36px;
+  }
+
+  main #news-event .section-title .subtitle {
+    font-size: 16px;
+  }
+
+  main #news-event .list {
+    margin-bottom: 36px;
+  }
+
+  main #news-event .item-link {
+    display: flex;
+  }
+
+  main #news-event .item-link-image {
+    display: block;
+    margin: -1px;
+    height: 132px;
+  }
+
+  main #news-event .item-link-image .image {
+    height: 100%;
+  }
+
+  main #news-event .item-link-content {
+    padding: 20px;
+    min-width: 0;
+  }
+
+  main #news-event #event .item-link-content {
+    margin: auto 0;
+    padding: 0 44px;
+  }
+
+  main #news-event #news .item-link-content > :first-child {
+    margin-bottom: 10px;
+  }
+
+  main #news-event .text {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  main #news-event #event .text {
+    line-height: 25px;
+  }
+  /* <--------- main */
+}
+
+@media (min-width: 992px) {
+  /* ---------> main */
+  main #news-event .inner {
+    max-width: var(--inner-max-width);
+    margin: auto;
+  }
+
+  main #news-event .content {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  main #news-event .content:first-of-type {
+    padding-left: 0;
+  }
+
+  main #news-event .content:last-of-type {
+    padding-right: 0;
+  }
+
+  main #news-event #event .item-link-content {
+    padding: 0 32px;
+  }
+
+  main #news-event .text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  main #news-event #event .text {
+    white-space: normal;
+  }
   /* <--------- main */
 }
 
@@ -348,7 +531,7 @@ main #cards .card-link:hover {
 
   header .navbar {
     height: 90px;
-    max-width: 1180px;
+    max-width: var(--inner-max-width);
     margin: auto;
     width: 92%;
   }
@@ -399,6 +582,11 @@ main #cards .card-link:hover {
 
   main #cards .card-link {
     width: 200px;
+  }
+
+  main #news-event .content {
+    padding-right: 16px;
+    padding-left: 16px;
   }
   /* <--------- header */
 }
