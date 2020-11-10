@@ -466,7 +466,6 @@ main #news-event .list-link::after {
   }
 
   main #news-event .item-link-image .image {
-    display: block;
     width: 207px;
     transition: transform 0.5s;
   }
