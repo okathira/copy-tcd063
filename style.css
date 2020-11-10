@@ -451,14 +451,24 @@ main #news-event .list-link::after {
     display: flex;
   }
 
+  main #news-event .item-link:hover .image {
+    transform: scale(1.2);
+  }
+
   main #news-event .item-link-image {
     display: block;
     margin: -1px;
-    height: 132px;
+    width: 207px;
+  }
+
+  main #news-event .item-link-image .overflow {
+    overflow: hidden;
   }
 
   main #news-event .item-link-image .image {
-    height: 100%;
+    display: block;
+    width: 207px;
+    transition: transform 0.5s;
   }
 
   main #news-event .item-link-content {
