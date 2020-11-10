@@ -461,10 +461,6 @@ main #news-event .list-link::after {
     width: 207px;
   }
 
-  main #news-event .item-link-image .overflow {
-    overflow: hidden;
-  }
-
   main #news-event .item-link-image .image {
     width: 207px;
     transition: transform 0.5s;
