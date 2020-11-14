@@ -457,7 +457,7 @@ main #news-event .list-link::after {
 
   main #news-event .item-link-image {
     display: block;
-    margin: -1px;
+    margin: -1px -1px 0;
     width: 207px;
   }
 
