@@ -512,7 +512,7 @@ main #news-event .list-link::after {
   }
 
   main #news-event #event .item-link-content {
-    padding: 0 32px;
+    padding: 0 26px;
   }
 
   main #news-event .text {
@@ -592,6 +592,10 @@ main #news-event .list-link::after {
   main #news-event .content {
     padding-right: 16px;
     padding-left: 16px;
+  }
+
+  main #news-event #event .item-link-content {
+    padding: 0 32px;
   }
   /* <--------- header */
 }
