@@ -12,7 +12,7 @@
     "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   --font-family-gothic: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  --inner-side-spacing: 0 20px;
+  --inner-side-spacing: 20px;
   --inner-max-width: 1180px;
 }
 
@@ -39,7 +39,7 @@ header .navbar-nav .nav-item a,
 main #top-content .inner,
 main #description,
 main #cards {
-  padding: var(--inner-side-spacing);
+  padding: 0 var(--inner-side-spacing);
 }
 
 .navbar-toggler {
@@ -263,67 +263,63 @@ main #cards .card-link:hover {
   background-color: var(--color-darkorange);
 }
 
-main #news-event {
+main #article-list {
   background-color: var(--color-whitesmoke);
-  padding: 38px 0 4px;
+  padding: 38px var(--inner-side-spacing) 4px;
 }
 
-main #news-event .block {
-  padding: var(--inner-side-spacing);
-}
-
-main #news-event .content {
+main #article-list .content {
   margin-bottom: 36px;
 }
 
-main #news-event .section-title {
+main #article-list .section-title {
   font-family: var(--font-family-mincho);
   font-size: 22px;
   line-height: 1;
   margin-bottom: 20px;
 }
 
-main #news-event .section-title .subtitle {
+main #article-list .section-title .subtitle {
   font-family: var(--font-family-gothic);
   font-size: 14px;
   margin-left: 12px;
   vertical-align: middle;
 }
 
-main #news-event .list {
+main #article-list .list {
   margin-bottom: 14px;
 }
 
-main #news-event .news-item {
+main #article-list .news-item {
   background-color: var(--color-white);
   border: 1px solid var(--color-gray);
   margin-top: -1px;
 }
 
-main #news-event .item-link {
+main #article-list .item-link {
   text-decoration: none;
 }
 
-main #news-event .item-link-image {
+main #article-list .item-link-image {
   display: none;
 }
 
-main #news-event .item-link-content {
+main #article-list .item-link-content {
   padding: 14px 20px;
 }
 
-main #news-event .item-link-content > :first-child {
+main #article-list .item-link-content > :first-child {
   margin-bottom: 6px;
 }
 
-main #news-event .date {
+main #article-list .date {
   display: block;
   font-size: 12px;
   line-height: 1;
   color: var(--color-darkgray);
 }
 
-main #news-event .text {
+main #article-list .text {
   font-size: 14px;
   color: var(--color-black);
   font-weight: 400;
@@ -331,18 +327,18 @@ main #news-event .text {
   margin: 0;
 }
 
-main #news-event .list-link {
+main #article-list .list-link {
   color: var(--color-black);
   line-height: 1;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-main #news-event .list-link:hover {
+main #article-list .list-link:hover {
   color: var(--color-darkgray);
 }
 
-main #news-event .list-link::after {
+main #article-list .list-link::after {
   content: "＞";
   margin-left: 12px;
 }
@@ -352,7 +348,7 @@ main #news-event .list-link::after {
 @media (min-width: 768px) {
   /* ---------> common */
   :root {
-    --inner-side-spacing: 0 48px;
+    --inner-side-spacing: 48px;
   }
 
   .logo {
@@ -430,62 +426,63 @@ main #news-event .list-link::after {
     line-height: 56px;
   }
 
-  main #news-event {
-    padding: 56px 0 60px;
+  main #article-list {
+    padding-top: 56px;
+    padding-bottom: 60px;
   }
 
-  main #news-event .section-title {
+  main #article-list .section-title {
     font-size: 45px;
     margin-bottom: 36px;
   }
 
-  main #news-event .section-title .subtitle {
+  main #article-list .section-title .subtitle {
     font-size: 16px;
   }
 
-  main #news-event .list {
+  main #article-list .list {
     margin-bottom: 36px;
   }
 
-  main #news-event .item-link {
+  main #article-list .item-link {
     display: flex;
   }
 
-  main #news-event .item-link:hover .image {
+  main #article-list .item-link:hover .image {
     transform: scale(1.2);
   }
 
-  main #news-event .item-link-image {
+  main #article-list .item-link-image {
     display: block;
     margin: -1px -1px 0;
     width: 207px;
   }
 
-  main #news-event .item-link-image .image {
+  main #article-list .item-link-image .image {
     width: 207px;
     transition: transform 0.5s;
   }
 
-  main #news-event .item-link-content {
+  main #article-list .item-link-content {
     padding: 20px;
     min-width: 0;
   }
 
-  main #news-event #event .item-link-content {
+  main #article-list #event .item-link-content {
     margin: auto 0;
     padding: 0 44px;
   }
 
-  main #news-event #news .item-link-content > :first-child {
+  main #article-list #news .item-link-content > :first-child {
     margin-bottom: 10px;
   }
 
-  main #news-event .text {
+  main #article-list .text {
     font-size: 16px;
     line-height: 1;
   }
 
-  main #news-event #event .text {
+  main #article-list #event .text {
     line-height: 25px;
   }
   /* <--------- main */
@@ -493,36 +490,41 @@ main #news-event .list-link::after {
 
 @media (min-width: 992px) {
   /* ---------> main */
-  main #news-event .inner {
+  main #article-list .inner {
     max-width: var(--inner-max-width);
     margin: auto;
   }
 
-  main #news-event .content {
+  main #article-list .content {
     padding-right: 12px;
     padding-left: 12px;
   }
 
-  main #news-event .content:first-of-type {
+  main #article-list .content:first-of-type {
     padding-left: 0;
   }
 
-  main #news-event .content:last-of-type {
+  main #article-list .content:last-of-type {
     padding-right: 0;
   }
 
-  main #news-event #event .item-link-content {
+  main #article-list #event .item-link-content {
     padding: 0 26px;
   }
 
-  main #news-event .text {
+  main #article-list .text {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  main #news-event #event .text {
+  main #article-list #event .text {
     white-space: normal;
+  }
+
+  main #article-list .content,
+  main #article-list .content .text-right {
+    margin-bottom: 0;
   }
   /* <--------- main */
 }
@@ -589,12 +591,12 @@ main #news-event .list-link::after {
     width: 200px;
   }
 
-  main #news-event .content {
+  main #article-list .content {
     padding-right: 16px;
     padding-left: 16px;
   }
 
-  main #news-event #event .item-link-content {
+  main #article-list #event .item-link-content {
     padding: 0 32px;
   }
   /* <--------- header */
