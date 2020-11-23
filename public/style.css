@@ -283,7 +283,6 @@ main #article-list .section-title .subtitle {
   font-family: var(--font-family-gothic);
   font-size: 14px;
   margin-left: 12px;
-  vertical-align: middle;
 }
 
 main #article-list .list {
@@ -293,7 +292,10 @@ main #article-list .list {
 main #article-list .news-item {
   background-color: var(--color-white);
   border: 1px solid var(--color-gray);
-  margin-top: -1px;
+}
+
+main #article-list .news-item:not(:first-of-type) {
+  border-top: 0;
 }
 
 main #article-list .item-link {
@@ -454,8 +456,12 @@ main #article-list .list-link::after {
 
   main #article-list .item-link-image {
     display: block;
-    margin: -1px -1px 0;
+    margin: -1px;
     width: 207px;
+  }
+
+  main #article-list .news-item:not(:last-of-type) .item-link-image {
+    margin-bottom: 0;
   }
 
   main #article-list .item-link-image .image {
