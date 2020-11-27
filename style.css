@@ -486,10 +486,16 @@ main #article-list .list-link::after {
   main #article-list .text {
     font-size: 16px;
     line-height: 1;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
   }
 
   main #article-list #event .text {
     line-height: 25px;
+    -webkit-line-clamp: 4;
   }
   /* <--------- main */
 }
@@ -516,16 +522,6 @@ main #article-list .list-link::after {
 
   main #article-list #event .item-link-content {
     padding: 0 26px;
-  }
-
-  main #article-list .text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  main #article-list #event .text {
-    white-space: normal;
   }
 
   main #article-list .content,
