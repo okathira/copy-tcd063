@@ -367,6 +367,7 @@ main #plan-list .text {
 main #plan-list .text .title {
   font-family: var(--font-family-mincho);
   color: var(--color-darkorange-lighter);
+  margin-bottom: 6px;
 }
 
 main #plan-list .text .intro {
@@ -447,7 +448,6 @@ main #plan-list .link .btn {
   font-size: 12px;
   padding: 0;
   width: 180px;
-  height: 44px;
   line-height: 44px;
   border: none;
   border-radius: 0;
@@ -606,6 +606,64 @@ main #plan-list .link .btn {
     line-height: 25px;
     -webkit-line-clamp: 4;
   }
+
+  main #plan-list {
+    margin-bottom: 100px;
+  }
+
+  main #plan-list .text {
+    margin-bottom: 50px;
+  }
+
+  main #plan-list .text .title {
+    margin-bottom: 10px;
+  }
+
+  main #plan-list .text .intro {
+    line-height: 33px;
+  }
+
+  main #plan-list .card-deck {
+    margin-bottom: 20px;
+  }
+
+  main #plan-list .card {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  main #plan-list .card:last-of-type {
+    margin-right: 0;
+  }
+
+  main #plan-list .card .list-group-item {
+    padding: 20px 10px;
+  }
+
+  main #plan-list .card .plan-name {
+    padding: 0;
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  main #plan-list .card:nth-child(even) .plan-name {
+    line-height: 56px;
+  }
+
+  main #plan-list .card .price {
+    padding: 24px 0;
+  }
+
+  main #plan-list .card .price .value {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  main #plan-list .link .btn {
+    font-size: 14px;
+    line-height: 55px;
+    width: 150px;
+  }
   /* <--------- main */
 }
 
@@ -709,6 +767,18 @@ main #plan-list .link .btn {
 
   main #article-list #event .item-link-content {
     padding: 0 32px;
+  }
+
+  main #plan-list .card-deck {
+    max-width: var(--inner-max-width);
+  }
+
+  main #plan-list .card {
+    margin-right: 30px;
+  }
+
+  main #plan-list .link .btn {
+    width: 200px;
   }
   /* <--------- header */
 }
