@@ -653,6 +653,10 @@ main #plan-list .link .btn {
     padding: 24px 0;
   }
 
+  main #plan-list .card .price .per {
+    line-height: 14px;
+  }
+
   main #plan-list .card .price .value {
     font-size: 40px;
     margin-bottom: 16px;
