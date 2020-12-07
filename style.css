@@ -217,7 +217,7 @@ main #cards .card-link {
 }
 
 main #cards .card {
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 main #cards .card-header {
@@ -375,7 +375,7 @@ main #plan-list .text .intro {
 }
 
 main #plan-list .card {
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   border-radius: 0;
 }
 
@@ -500,15 +500,6 @@ main #plan-list .link .btn {
     padding: 48px 24px;
   }
 
-  main #cards .card {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-
-  main #cards .card:last-of-type {
-    margin-right: 0;
-  }
-
   main #cards .card-header {
     width: 160px;
     height: 160px;
@@ -624,15 +615,6 @@ main #plan-list .link .btn {
 
   main #plan-list .card-deck {
     margin-bottom: 20px;
-  }
-
-  main #plan-list .card {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-
-  main #plan-list .card:last-of-type {
-    margin-right: 0;
   }
 
   main #plan-list .card .list-group-item {
@@ -755,10 +737,6 @@ main #plan-list .link .btn {
     padding: 48px 0;
   }
 
-  main #cards .card {
-    margin-right: 30px;
-  }
-
   main #cards .card-link {
     width: 200px;
   }
@@ -774,10 +752,6 @@ main #plan-list .link .btn {
 
   main #plan-list .card-deck {
     max-width: var(--inner-max-width);
-  }
-
-  main #plan-list .card {
-    margin-right: 30px;
   }
 
   main #plan-list .link .btn {
