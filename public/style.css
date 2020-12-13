@@ -702,6 +702,29 @@ main #category-list .link .category-name::before {
     line-height: 55px;
     width: 150px;
   }
+
+  main #category-list .text .title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  main #category-list .text .intro {
+    margin-bottom: 18px;
+    line-height: 28px;
+  }
+
+  main #category-list .link {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  main #category-list .link .category-image {
+    transition: transform 0.5s;
+  }
+
+  main #category-list .link:hover .category-image {
+    transform: scale(1.2);
+  }
   /* <--------- main */
 }
 
@@ -732,6 +755,21 @@ main #category-list .link .category-name::before {
   main #article-list .content,
   main #article-list .content .text-right {
     margin-bottom: 0;
+  }
+
+  main #category-list {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+
+  main #category-list .text .title {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  main #category-list .text .intro {
+    margin-bottom: 40px;
+    line-height: 36px;
   }
   /* <--------- main */
 }
