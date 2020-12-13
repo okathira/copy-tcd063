@@ -453,6 +453,59 @@ main #plan-list .link .btn {
   color: var(--color-white);
   background-color: var(--color-black);
 }
+
+main #category-list {
+  background-image: linear-gradient(#0008, #0008),
+    url("./images/category-list-background.jpg");
+  background-size: cover;
+  padding: 52px var(--inner-side-spacing) 56px;
+}
+
+main #category-list .text {
+  color: var(--color-white);
+}
+
+main #category-list .text .title {
+  margin-bottom: 10px;
+  font-family: var(--font-family-mincho);
+}
+
+main #category-list .text .intro {
+  margin-bottom: 18px;
+  line-height: 28px;
+}
+
+main #category-list .link {
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+main #category-list .link:last-of-type {
+  margin-bottom: 0;
+}
+
+main #category-list .link .category-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: var(--color-darkorange);
+  width: 170px;
+  line-height: 120px;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+main #category-list .link .category-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  border-style: solid;
+  border-width: 60px 30px;
+  border-color: transparent #fff #fff transparent;
+}
 /* <--------- main */
 
 @media (min-width: 768px) {
