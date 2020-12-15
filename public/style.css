@@ -480,11 +480,6 @@ main #category-list .link {
   margin-bottom: 24px;
   overflow: hidden;
 }
-
-main #category-list .link:last-of-type {
-  margin-bottom: 0;
-}
-
 main #category-list .link .category-name {
   position: absolute;
   top: 0;
