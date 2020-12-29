@@ -458,7 +458,7 @@ main #category-list {
   background-image: linear-gradient(#0008, #0008),
     url("./images/category-list-background.jpg");
   background-size: cover;
-  padding: 52px var(--inner-side-spacing) 56px;
+  padding: 52px var(--inner-side-spacing) 30px;
 }
 
 main #category-list .text {
@@ -502,6 +502,71 @@ main #category-list .link .category-name::before {
   border-color: transparent #fff #fff transparent;
 }
 /* <--------- main */
+
+/* ---------> footer */
+footer .info {
+  padding: 40px var(--inner-side-spacing);
+  border-bottom: solid 1px var(--color-gray);
+}
+
+footer .info address {
+  margin: 16px 0 12px;
+  line-height: 31px;
+}
+
+footer .info .sns {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+footer .info .sns svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-black);
+  transition: color 0.2s;
+}
+
+footer .info .sns svg:hover {
+  color: var(--color-darkgray);
+}
+
+footer .pagelist {
+  padding: 32px var(--inner-side-spacing);
+  background-color: var(--color-whitesmoke);
+  border-bottom: solid 1px var(--color-gray);
+}
+
+footer .pagelist ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  row-gap: 12px;
+}
+
+footer .pagelist li {
+  padding: 0;
+}
+
+footer .pagelist li a {
+  color: var(--color-black);
+  transition: color 0.2s;
+}
+
+footer .pagelist li a:hover {
+  text-decoration: none;
+  color: var(--color-darkorange);
+}
+
+footer .copyright {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+footer .copyright {
+  line-height: 50px;
+}
+/* <--------- footer */
 
 @media (min-width: 768px) {
   /* ---------> common */
