@@ -786,6 +786,40 @@ footer .copyright {
     transform: scale(1.2);
   }
   /* <--------- main */
+
+  /* ---------> footer */
+  footer .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer .info address {
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+
+  footer .pagelist {
+    padding: 0;
+  }
+
+  footer .pagelist ul {
+    justify-content: center;
+  }
+
+  footer .pagelist li {
+    line-height: 60px;
+    flex-grow: 0;
+  }
+
+  footer .pagelist li:not(:last-of-type)::after {
+    content: "|";
+    margin: 10px;
+  }
+
+  footer .copyright {
+    line-height: 60px;
+  }
+  /* <--------- footer */
 }
 
 @media (min-width: 992px) {
