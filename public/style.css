@@ -517,7 +517,10 @@ footer .info address {
 footer .info .sns {
   display: flex;
   justify-content: center;
-  column-gap: 16px;
+}
+
+footer .info .sns a {
+  margin: 0 8px;
 }
 
 footer .info .sns svg {
@@ -541,11 +544,11 @@ footer .page-list ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  row-gap: 12px;
 }
 
 footer .page-list li {
   padding: 0;
+  margin: 6px 0;
 }
 
 footer .page-list li a {
@@ -807,7 +810,7 @@ footer .copyright {
   }
 
   footer .page-list li {
-    line-height: 60px;
+    line-height: 48px;
     flex-grow: 0;
   }
 
