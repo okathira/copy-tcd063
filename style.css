@@ -517,7 +517,10 @@ footer .info address {
 footer .info .sns {
   display: flex;
   justify-content: center;
-  column-gap: 16px;
+}
+
+footer .info .sns a {
+  margin: 0 8px;
 }
 
 footer .info .sns svg {
@@ -531,29 +534,29 @@ footer .info .sns svg:hover {
   color: var(--color-darkgray);
 }
 
-footer .pagelist {
+footer .page-list {
   padding: 32px var(--inner-side-spacing);
   background-color: var(--color-whitesmoke);
   border-bottom: solid 1px var(--color-gray);
 }
 
-footer .pagelist ul {
+footer .page-list ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  row-gap: 12px;
 }
 
-footer .pagelist li {
+footer .page-list li {
   padding: 0;
+  margin: 6px 0;
 }
 
-footer .pagelist li a {
+footer .page-list li a {
   color: var(--color-black);
   transition: color 0.2s;
 }
 
-footer .pagelist li a:hover {
+footer .page-list li a:hover {
   text-decoration: none;
   color: var(--color-darkorange);
 }
@@ -798,20 +801,20 @@ footer .copyright {
     margin-bottom: 20px;
   }
 
-  footer .pagelist {
+  footer .page-list {
     padding: 0;
   }
 
-  footer .pagelist ul {
+  footer .page-list ul {
     justify-content: center;
   }
 
-  footer .pagelist li {
-    line-height: 60px;
+  footer .page-list li {
+    line-height: 48px;
     flex-grow: 0;
   }
 
-  footer .pagelist li:not(:last-of-type)::after {
+  footer .page-list li:not(:last-of-type)::after {
     content: "|";
     margin: 10px;
   }
