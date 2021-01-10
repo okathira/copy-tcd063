@@ -47,17 +47,29 @@ body {
   color: #000;
   display: block;
 }
-
 /* <--------- common */
 
 /* ---------> main */
-
 main .me .info {
   text-align: right;
 }
 
 main .me .message {
+  position: relative;
   background-color: #cf9;
+  margin-right: 16px;
+}
+
+main .me .message::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -16px;
+  width: 24px;
+  height: 16px;
+  border-radius: 0 0 16px 8px / 0 0 16px 4px;
+  box-shadow: 4px -16px 0 -8px #cf9 inset;
 }
 
 main .friend {
@@ -74,7 +86,21 @@ main .friend .user-name {
 }
 
 main .friend .message {
+  position: relative;
   background-color: #eee;
+  margin-left: 16px;
+}
+
+main .friend .message::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -16px;
+  width: 24px;
+  height: 16px;
+  border-radius: 0 0 8px 16px / 0 0 4px 16px;
+  box-shadow: -4px -16px 0 -8px #eee inset;
 }
 
 main .avatar img {
